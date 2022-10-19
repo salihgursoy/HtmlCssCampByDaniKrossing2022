@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+   <head>
+          <Title> Anasayfa </Title>
+            <link rel="icon" type="image/jpg" href="image/favicon.jpg">
+            <!-- favicon, sekmediki küçük logo buradan değiştirilir. -->
+
+             <meta charset="utf-8">
+             <meta name="description" content="this website is about me">
+             <meta name="author" content="Peyami safa">
+             <meta name="keyword" content="html,css, dersler, eğitim">
+             <!-- bu meta tag seo için yardımcı olur ve tanıtım sağlar. -->
+
+            <!--alttaki kod google dan alınan font u bulan koddur, sadece internet varsa çalışır.-->
+                  <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+          <link rel="stylesheet" href="style.css">
+          <!--css ile html dosyasını birbirine bağlar-->
+  </head>
+   <body>
+
+
+      <h1> HOŞGELDİN </h1>
+
+<nav>
+  <a href="index.html"> <img class="logom" src="image/logo.jpg" alt="logom"> </a>
+  <ul>
+    <li> <a href="index.html"> Anasayfa </a> </li>
+    <li> <a href="aboutme.html"> Hakkımda </a>
+      <ul>
+        <li> <a href="#"> Özgeçmiş</a> </li>
+        <li> <a href="#"> Okullar </a> </li>
+        <li> <a href="#"> Hobiler </a> </li>
+      </ul>
+     </li>
+    <li> <a href="gallery.html"> Galeri </a> </li>
+    <li> <a href="contact.Html"> İletişim </a> </li>
+  </ul>
+</nav>
+
+<div class="kalıcı1">  <a href="#SON" > <b>SONA GİT!</b> </a> </div>
+<div class="kalıcı2"> <a href="contact.Html" target="_blank"> <b>CONTACT</b> </a> </div>
+<!-- target="_blank" linkin yeni sekmede açılmasını sağlar. -->
+
+<div class="transitiondeneme"> </div> <!-- transition kısmı / geçiş efekti vermek -->
+
+<div class="grid">
+  <div class="title">title</div>
+  <div class="header">header</div>
+  <div class="sidebar">sidebar</div>
+  <div class="body">body</div>
+  <div class="footer">footer</div>
+</div>
+
+<audio src="audio/ara.mp3"controls width: 300px > </audio>
+
+<form class="FileRequest" action="index.html" method="post" enctype="multipart/form-data">
+  <h2>CV, Kimlik fotokopinizi ve Fotoğrafınızı Yükleyin <br> </h2><input type="file" name="dosya" value="fileS"> <br>
+  <p> <b>lütfen 1gb boyutunda ve format türü DOC yada PDF olarak gönderin. Sıkıştırıp RAR dosyasına isminizi verebilirsiniz.</b></p>
+
+<input type="image" src="image/button.jpg" name="onay" value="submit" style="width:30px">
+<input type="image" src="image/reset.ico" name="iptal" value="reset" style="width:30px">
+<br>
+
+</form> <br>
+
+   <form class="login" action="mail.php" method="get">
+     <input type="hidden" name="tarih" value="10 Ağustos"/> <!-- Bu dataya giden gizli form elemanıdır, kullanıcı göremez-->
+
+    <h2> Hangi Şube?</h2>
+    <select name="il" size="1" style="width: 300px">
+            <optgroup label="Marmara">
+            <option value="İst">İstanbul</option>
+            <option selected value="Çanakkale">Ankara</option>
+            <option value="Bolu">İzmir</option>
+            </optgroup>
+                      <optgroup label="Akdeniz">
+                        <option value="Antalya"> Antalya</option>
+                        <option value="Antalya"> Mersin</option>
+                        <option value="Antalya"> Hatay</option>
+                      </optgroup>
+    </select> <br> <br>
+
+                                     <h2> KİŞİSEL BİLGİ radioları</h2>
+                                     <h3> Hangi takımı tutuyorsun?</h3>
+                                    <input type="radio" name="team"> Galatasaray </input> <br>
+                                    <input type="radio" name="team"> fenerbahçe </input> <br>
+                                    <input type="radio" name="team"> Beşiktaş </input> <br>
+                                  <!-- name e verilen değer, hangi şıklarının hangi soruya ait olduğunun ayarını sağlar-->
+                                    <h3> İngilizce seviyen nasıl? </h3>
+                                    <input type="radio" name="language"> kötü </input> <br>
+                                    <input type="radio" name="language"> orta </input> <br>
+                                    <input type="radio" name="language"> iyi  </input> <br>
+
+                        <br> <h2> KİŞİSEL BİLGİ checkboxları</h2>
+                        <input type="checkbox" name="personal" value="Informations" checked="checked"> Evliyim </input> <br>
+                        <input type="checkbox" name="personal" value="Informations"> Askere gittim </input> <br>
+                        <input type="checkbox" name="personal" value="Informations"checked="checked"> Üniversite okudum </input> <br>
+
+          <br> <table class="inputtablosu">
+              <tr> <td> Parola: </td> <td><input type="password" name="sifre" placeholder="*******" required>  </td></tr>
+              <tr> <td> Ad: </td> <td><input type="text" name="ad" placeholder="ahmet" required>  </td></tr> <!-- autofocus sayfa açıldığında direk yazmanızı başlatır-->
+              <tr> <td> Soyad: </td>  <td><input type="text" name="soyad" placeholder="gürsoy" required>  </td></tr>
+              <tr> <td> Mail adresi:</td>  <td> <input type="email" name="mail" placeholder="salihgursoy@gmail.com" required>  </td></tr>
+              <tr> <td> İstek/Şikayet/Teşekkür:</td>  <td> <textarea name="text" rows="8" cols="80" placeholder="şikayet veya istek yazın..." maxlength="100" required></textarea>  </td></tr>
+          </table>
+
+ <input type="submit" name="onay" value="Gönder" >
+ <input type="reset" name="iptal" value="Sıfırla">
+
+</form>
+
+        <table class="ulketablosu" border="5px">
+          <caption> <b> ÜLKE NÜFUS TABLOSU </b></caption>
+                  <thead>
+                    <tr>   <td colspan="5"> colspan test </td>
+                    <tr>  <td><b> Ülke</b></td>  <td><b> Nüfus</b></td>  <td><b>Göçmen Nüfusu</b></td>  </tr> <!-- <th> ile başlık satırı yapabilirsin-->
+                  </thead>
+                  <tbody>
+                    <tr><td>Türkiye </td> <td> 80 milyon</td> <td> 15 milyon</td> <td rowspan="3">rowspan test</td></tr>
+                    <!-- rowspan eğer thead, tbody ve tfoot arasında kaldığı için çalışmayabilir, hata çıkarsa o kısmı kontrol et ilk-->
+                    <tr><td>Bulgaristan </td> <td> 7 milyon</td> <td> 200 bin </td></tr>
+                    <tr><td>Yunanistan </td> <td> 11 milyon</td> <td> 800 bin </td></tr>
+                  </tbody>
+                  <tfoot>
+                    <tr><td> </td> <td>Toplam Nüfus: 98 MİLYON</td> <td>Toplam Göçmen: 16 MİLYON</td></tr>
+                  </tfoot>
+        </table>
+
+Maç Hangi Dakika'da? <meter min="0" max="90" value="45" style=" width: 300px ; height:100px"> Dakika 45 (ilk yarı bitmek üzere) </meter>
+Dosyalar ne kadar yüklendi? <progress min="0" max="100" value="80" style=" width: 300px ; height:100px"> %75 (çeyrek işlem kaldı) </progress>
+
+<figure>
+  <img src="image/manzara.jpg" title="manzara-resmi"alt="manzara"/>
+  <figcaption> Şekil 1.2: Güney afrikadan bir manzara </figcaption>
+</figure>
+
+<div class="wrapper">
+
+<iframe width="1200" height="675" src="https://www.youtube.com/embed/5K3Jdux_DDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- bu youtube dan alınan video linkini siteye gömme ve ölçülendirme -->
+
+<video src="video/video1.mp4" controls autoplay> </video> <!-- bu dosya konumundan video ekleme -->
+
+<video controls autoplay> <!-- bu dosya konumundan video ekleme ve ayrıca türünü belirterek tarayıcıda çalışmazsa mesaj verme -->
+  <source src="video/video1.mp4" type="video/mp4">
+  Tarayıcınız bu videoyu desteklemiyor!
+</video>
+
+
+
+
+
+ <section>
+    <article>
+      <div class="view"> </div>
+      <div class="view1"> </div>
+      <img class="floatVeClearMantıgı"src="image/button.jpg">
+      <div>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <hr> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div
+      <p class="xxx">    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  </p>
+      <p class="xxx">    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
+      <p class="YYY">    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
+      <p class="ZZZ">    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat </p>
+<!-- aynı class ı birden fazla kullanabilirsin ancak bir tanımlı id i bir sayfada tek defa kullanabilirsin. id eşsizdir! -->
+
+      <div class="box">
+      <p id="isimlendirdim">     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+       consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat  nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequatLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      </div>
+      <br>
+
+      <div id="bir" class="kutu"></div>
+      <div id="iki" class="kutu"></div>
+
+    </article>
+  </section>
+</div>
+
+
+
+ <h1 id="SON">GÜLE GÜLE</h1>
+
+   </body>
+</html>

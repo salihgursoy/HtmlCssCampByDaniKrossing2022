@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Title> Hakkımda </Title>
+<link rel="icon" type="image/jpg" href="image/favicon.jpg">
+<!-- favicon, sekmediki küçük logo buradan değiştirilir. -->
+
+
+<!--alttaki kod google dan alınan font u bulan koddur, sadece internet varsa çalışır.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+html, body { height: 100%;}
+* { margin: 0;
+padding: 0;}
+
+      #container { /*öncelikle sitemizi %100 height içerisine bir container ile alıyoruz.*/
+      min-height: 100%;
+      }
+
+            #main { /* içeriği ve siteyi bu main kutusunun içine kuruyoruz ve ona padding-bottom koyarak footer ın altına saklanmasını önlüyoruz.*/
+              overflow: auto;
+              padding-bottom: 100px;
+            }
+            /* footer'ı sitenin en altına gelmesi için container ın içinde değil dışına yazdık. footer'ı %100 olan site yüksekliğimizin(container) içine sokmak içinse konumunu kendi yüksekliği olan -100px kadar relative olarak yukarı alıyoruz. Bu sefer içeriğin üstüne biner diyede yukarıda içerik alanımız olan main tagine padding-botton ile footer yüksekliği kadar boşluk veriyoruz. */
+                        #footer1 {
+                          background-color: black;
+                          position:relative;
+                          height: 100px;
+                          margin-top: -100px;
+                          clear: both;
+                          }
+                               p {font-size: 40px;
+                              text-align: center;
+                            color: white;}
+
+/* Header daki NAVİGATİON*/
+nav { width: 100% ;
+  height: 100px ;
+background-color: #800000}
+
+.logom { border: 1px transparent solid;
+  border-radius: 100% ;
+  margin: 15px;
+  width: 70px;
+  height: 70px;
+  float: left;}
+
+nav ul { margin-left: 400px;}
+nav ul li { position: relative;
+list-style: none;
+display: inline-block;
+float: left;}
+nav ul li a { color: white;
+text-decoration: none;
+line-height: 100px;
+padding: 40px;
+font-family: arial;
+font-weight: bold;
+font-size: 16px }
+nav ul li a:hover {
+color: red; }
+              /* burada navigation'a alt sekmeler ekledim. */
+              nav ul li ul {
+              display: none;
+              position: absolute;
+              left: -400px;
+              background-color: #800000;
+              }
+              nav ul li:hover ul {
+              display: block ;
+              }
+              nav ul li ul li a {
+              line-height: 50px;
+              padding: 20px 40px;
+              border: 10px}
+
+                                                        .deneme {width: 500px;
+                                                        height: 700px;
+                                                        background-color: pink;}
+                                                        </style>
+                      </head>
+
+
+
+
+   <body>
+
+          <div id="container">
+                      <div id="main">
+                                    <nav>
+                                      <a href="index.html"> <img class="logom" src="image/logo.jpg" alt="logom"> </a>
+                                      <ul>
+                                        <li> <a href="index.html"> Anasayfa </a> </li>
+                                        <li> <a href="aboutme.html"> Hakkımda </a>
+                                          <ul>
+                                            <li> <a href="#"> Özgeçmiş</a> </li>
+                                            <li> <a href="#"> Okullar </a> </li>
+                                            <li> <a href="#"> Hobiler </a> </li>
+                                          </ul>
+                                         </li>
+                                        <li> <a href="gallery.html"> Galeri </a> </li>
+                                        <li> <a href="contact.Html"> İletişim </a> </li>
+                                      </ul>
+                                    </nav>
+                                                                      <div class="deneme"></div>
+
+                      </div>
+            </div>
+
+        <footer id="footer1">
+          <p>FOOTER I HER ZAMAN NASIL SAYFANIN EN ALTINDAN TUTARIZ?</p>
+        </footer>
+
+   </body>
+</html>
